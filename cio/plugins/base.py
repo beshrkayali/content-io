@@ -66,3 +66,9 @@ class BasePlugin(object):
         Prepares node for render and returns rendered content
         """
         return self.render(data)
+
+    def get_context(self, **kwargs):
+        """
+        Returns custom context
+        """
+        return kwargs
